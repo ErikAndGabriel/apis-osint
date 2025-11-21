@@ -1,1 +1,1 @@
-301218103007
+Cara, olha... eu tô numa merda sem tamanho. Minhas notas tão um lixo, tô cheio de tarefa atrasada e me sentindo um lixo. Preciso ficar na minha por um tempo para me organizar. Não é pessoal, mas eu realmente preciso de silêncio para me concentrar. Beleza?
