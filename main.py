@@ -1,7 +1,7 @@
-from projeto.apis.cep import ApiCep, Salvar
-from projeto.apis.ip import BuscarIp, SalvarIp
-from projeto.apis.email import BusacarEmail
-from projeto.banner import Banners
+from ptojeto.apis.cep import ApiCep, Salvar
+from ptojeto.apis.ip import BuscarIp, SalvarIp
+from ptojeto.apis.email import BusacarEmail
+from ptojeto.banner import Banners
 from colorama import Fore, init
 import time 
 import os 
