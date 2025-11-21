@@ -1,7 +1,7 @@
-from ptojeto.apis.cep import ApiCep, Salvar
-from ptojeto.apis.ip import BuscarIp, SalvarIp
-from ptojeto.apis.email import BusacarEmail
-from ptojeto.banner import Banners
+from projeto.apis.cep import ApiCep, Salvar
+from projeto.apis.ip import BuscarIp, SalvarIp
+from projeto.apis.email import BusacarEmail
+from projeto.banner import Banners
 from colorama import Fore, init
 import time 
 import os 
@@ -11,6 +11,32 @@ init(autoreset=True)
 
 def clear():
     os.system('clear')
+
+def menu_email():
+    while True:
+        try:
+            clear()
+            print(Banners.Banner_Ferramentas) 
+            print("\n[1] Buscar")
+            print("[2] Menu principal")
+            escolha = int(input("\nMenu@Email >> "))
+
+            if escolha == 1:
+                email = input("o email: ")
+                usuario = BusacarEmail(email)
+                usuario.Buscar()
+                input("[ENTER]")
+            elif escolha == 2:
+                print(f"{Fore.RED} voltando para o menu principal!!!, em 5 segundos")
+                time.sleep(5)
+                break
+            else:
+                input("escolha invalida!![ENTER]")
+                continue
+
+        except ValueError:
+            input("somente numeros!, [ENTER]")
+            continue
 
 def menu_cep():
     while True:
@@ -100,6 +126,9 @@ def Menu():
 
             if escolha == 1:
                 menu_ip()
+
+            elif escolha == 2:
+                menu_email()
             
             elif escolha == 3:
                 menu_cep()
