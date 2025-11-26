@@ -1,5 +1,5 @@
 import os
-from style.banner import Banner
+from style.banners import Banner
 
 class BuscarEmail:
     def __init__(self, email):
