@@ -5,8 +5,8 @@ APIS = {
         "tempo": 10,
     },
     "api_cep": {
-        "nome": "cep.awesomeapi",
-        "url": "https://cep.awesomeapi.com.br/json/{}",
+        "nome": "viacep",
+        "url": "https://viacep.com.br/ws/{}/json/",
         "tempo": 10
     },
     "api_cnpj": {
@@ -15,3 +15,5 @@ APIS = {
         "tempo": 10
     }
 }
+
+# funciona merda!!
